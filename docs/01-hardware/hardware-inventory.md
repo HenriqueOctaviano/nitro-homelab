@@ -21,7 +21,7 @@ Acer Nitro 5 AN515-54
 | Wi-Fi | Intel Wi-Fi 6 AX200 |
 | Current OS | Windows 11 Pro |
 | Secure Boot | Enabled |
-| Firmware virtualization | Detected as disabled |
+| Firmware virtualization | Enabled in BIOS and Task Manager; CIM/WMI returned inconsistent values |
 
 ## Storage
 
@@ -43,7 +43,8 @@ The machine was initially assumed to have 32 GB RAM and 1 TB storage. Inventory 
 - [x] GPU model
 - [x] Windows edition
 - [x] Available storage devices
-- [~] Confirm Intel VT-x setting in BIOS
+- [x] Confirm Intel VT-x setting in BIOS
+- [x] Confirm Intel VT-d setting in BIOS
 - [ ] Extra SSD expansion option
 - [ ] Proxmox hardware compatibility details
 
