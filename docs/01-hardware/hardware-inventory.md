@@ -43,7 +43,7 @@ The machine was initially assumed to have 32 GB RAM and 1 TB storage. Inventory 
 - [x] GPU model
 - [x] Windows edition
 - [x] Available storage devices
-- [ ] Confirm Intel VT-x setting in BIOS
+- [~] Confirm Intel VT-x setting in BIOS
 - [ ] Extra SSD expansion option
 - [ ] Proxmox hardware compatibility details
 
