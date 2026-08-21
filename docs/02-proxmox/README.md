@@ -109,3 +109,7 @@ I understand the selected disk will be wiped and I approve continuing.
 ```
 
 No destructive installation step should happen before that explicit confirmation.
+
+## Continuation Note
+
+For the next working session, use `NEXT_SESSION.md`.
