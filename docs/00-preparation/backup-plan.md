@@ -63,3 +63,7 @@ Before deleting or wiping anything:
 5. Verify the backup from the new laptop.
 6. Document what was verified.
 7. Mark `SAFE TO WIPE` only after verification.
+
+## Verification
+
+Use `backup-verification-checklist.md` as the operational checklist before any wipe.
