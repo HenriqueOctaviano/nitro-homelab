@@ -30,10 +30,10 @@ Goal: inspect and configure firmware settings required for virtualization.
 Progress:
 
 ```text
-[~] 01.1 BIOS entry plan
-[ ] 01.2 Enable Intel VT-x
-[ ] 01.3 Review Secure Boot
-[ ] 01.4 Confirm virtualization from Windows
+[x] 01.1 BIOS entry plan
+[x] 01.2 Enable Intel VT-x
+[x] 01.3 Review Secure Boot
+[~] 01.4 Confirm virtualization from Windows
 [ ] 01.5 Document final firmware state
 ```
 
