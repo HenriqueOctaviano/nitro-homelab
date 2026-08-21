@@ -83,11 +83,12 @@ Current sanitized result:
 Initial backup copy: 14,583 items, 16.39 GB
 Filtered Downloads copy: 4,485 items, 100.71 GB
 Approximate local backup total: 117.10 GB
+Post-review local backup total: approximately 30 GB
 Google Drive upload: pending
 Verified from new laptop: no
 Verified categories: pending
 Known exclusions: full game libraries, reinstallable applications, Windows system folders, Program Files, caches, temporary files, audio/video/app installers from Downloads filter
-Remaining concerns: upload to Google Drive and verification from the new laptop still required
+Remaining concerns: upload the reduced backup to Google Drive and verify from the new laptop
 Final status: NOT SAFE TO WIPE
 ```
 
