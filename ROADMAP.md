@@ -53,12 +53,30 @@ Dependencies:
 
 Goal: evaluate and install Proxmox VE bare metal after preparation is complete.
 
+Progress:
+
+```text
+[~] 02.1 Installation plan
+[ ] 02.2 ISO download and verification
+[ ] 02.3 USB installer creation
+[ ] 02.4 Disk layout confirmation
+[ ] 02.5 Final destructive-action confirmation
+[ ] 02.6 Install Proxmox VE
+[ ] 02.7 First boot and web UI access
+```
+
 Potential work:
 
 - Choose disk layout.
 - Install Proxmox.
 - Configure management access.
 - Verify remote administration from the new laptop.
+
+Dependencies:
+
+- Backup is complete and the Acer is marked `SAFE TO WIPE`.
+- Intel VT-x/VT-d are enabled in BIOS.
+- Target disk selection must be confirmed before installation.
 
 ## Phase 03 - Networking
 
