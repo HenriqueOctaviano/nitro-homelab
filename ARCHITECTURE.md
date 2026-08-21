@@ -13,7 +13,7 @@
 | Wi-Fi | Intel Wi-Fi 6 AX200 |
 | Current OS | Windows 11 Pro |
 | Secure Boot | Enabled |
-| Firmware virtualization | Currently detected as disabled |
+| Firmware virtualization | Intel VT-x/VT-d enabled in BIOS; Task Manager shows virtualization enabled |
 
 ## Current State
 
@@ -26,7 +26,7 @@ Acer Nitro 5
     └── D: Kingston NVMe, existing data
 ```
 
-Backup and new-laptop verification are complete. The current priority is firmware preparation before Proxmox installation.
+Backup and new-laptop verification are complete. Firmware virtualization is enabled. The current priority is Proxmox installation planning before any destructive disk operation.
 
 ## Intended Direction
 
@@ -61,18 +61,18 @@ Potential core VM set:
 - Kubernetes/K3s nodes
 - AI/JARVIS host
 
-## Storage Considerations
+## Storage Plan
 
-The machine has two NVMe SSDs, which may allow separation between system, templates, virtual machines, databases, AI models and lab storage.
+The machine has two NVMe SSDs, which allows separating the Proxmox system disk from most lab storage.
 
-One possible future layout:
+Initial intended layout:
 
 ```text
 WDC 512 GB
-├── Proxmox
+├── Proxmox VE system
 ├── ISOs
 ├── templates
-└── selected VMs
+└── small/critical VMs
 
 Kingston 1 TB
 ├── VMs
@@ -82,7 +82,7 @@ Kingston 1 TB
 └── lab storage
 ```
 
-This is not a final decision.
+This layout must be confirmed in the Proxmox installer before any disk write.
 
 ## Constraints And Unknowns
 
