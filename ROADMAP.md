@@ -10,18 +10,18 @@ Progress:
 
 ```text
 [x] 00.1 Hardware baseline
-[~] 00.2 Storage audit
-[ ] 00.3 Backup plan
-[ ] 00.4 Upload to Google Drive
-[ ] 00.5 Backup verification
-[ ] 00.6 Review from new laptop
-[ ] 00.7 Safe to wipe
+[x] 00.2 Storage audit
+[x] 00.3 Backup plan
+[x] 00.4 Upload to Google Drive
+[x] 00.5 Backup verification
+[x] 00.6 Review from new laptop
+[x] 00.7 Safe to wipe
 ```
 
 Dependencies:
 
-- No Proxmox install before `SAFE TO WIPE`.
-- No destructive disk changes before backup verification.
+- Proxmox installation can proceed after final destructive-action confirmation.
+- Destructive disk changes require an explicit final confirmation before execution.
 
 ## Phase 01 - BIOS / Firmware
 

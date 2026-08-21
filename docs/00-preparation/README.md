@@ -18,16 +18,16 @@ This phase prepares the Acer Nitro 5 before any destructive change.
 [x] Storage audit
 [x] Backup classification
 [x] Backup plan finalization
-[~] Backup execution
-[ ] Upload to Google Drive verification
-[ ] Backup verification
-[ ] Review from new laptop
-[ ] Safe to wipe
+[x] Backup execution
+[x] Upload to Google Drive verification
+[x] Backup verification
+[x] Review from new laptop
+[x] Safe to wipe
 ```
 
 ## Rule
 
-Do not install Proxmox or wipe disks until backup, verification and review are complete.
+Backup, upload and verification are complete. The Acer is now marked `SAFE TO WIPE`.
 
 ## Current Documents
 
