@@ -1,0 +1,89 @@
+# Roadmap
+
+This roadmap tracks the intended learning path. The order can change as the lab exposes constraints or better sequencing.
+
+## Phase 00 - Preparation
+
+Goal: understand the current machine, protect important data and only wipe the Acer after verification.
+
+Progress:
+
+```text
+[x] 00.1 Hardware baseline
+[~] 00.2 Storage audit
+[ ] 00.3 Backup plan
+[ ] 00.4 Upload to Google Drive
+[ ] 00.5 Backup verification
+[ ] 00.6 Review from new laptop
+[ ] 00.7 Safe to wipe
+```
+
+Dependencies:
+
+- No Proxmox install before `SAFE TO WIPE`.
+- No destructive disk changes before backup verification.
+
+## Phase 01 - BIOS / Firmware
+
+Goal: inspect and configure firmware settings required for virtualization.
+
+Potential work:
+
+- Enable Intel VT-x if disabled.
+- Review Secure Boot implications.
+- Document BIOS version and settings.
+
+## Phase 02 - Proxmox
+
+Goal: evaluate and install Proxmox VE bare metal after preparation is complete.
+
+Potential work:
+
+- Choose disk layout.
+- Install Proxmox.
+- Configure management access.
+- Verify remote administration from the new laptop.
+
+## Phase 03 - Networking
+
+Goal: design isolated virtual networks for management, lab services, DMZ and offensive testing.
+
+Potential work:
+
+- Management network.
+- LAB-LAN.
+- DMZ.
+- ATTACK network.
+- Routing and firewall boundaries.
+
+## Phase 04 - Firewall / OPNsense
+
+Goal: evaluate OPNsense as the lab firewall.
+
+Potential work:
+
+- Deploy OPNsense VM.
+- Configure interfaces.
+- Add basic firewall rules.
+- Validate isolation.
+
+## Later Phases
+
+Planned learning areas:
+
+| Phase | Area |
+| --- | --- |
+| 05 | Linux infrastructure |
+| 06 | Windows Server / Active Directory |
+| 07 | Docker |
+| 08 | Cyber range |
+| 09 | Observability |
+| 10 | Development / APIs |
+| 11 | CI/CD |
+| 12 | Ansible |
+| 13 | Terraform / OpenTofu |
+| 14 | Kubernetes / K3s |
+| 15 | SIEM / SOC lab |
+| 16 | JARVIS / Local AI |
+
+These technologies are learning targets and will become concrete only when introduced, tested and documented.
