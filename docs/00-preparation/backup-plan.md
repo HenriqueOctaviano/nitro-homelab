@@ -40,3 +40,15 @@ Prioritize:
 - Relevant Downloads files
 - Local game saves
 - Important app-specific settings
+
+## Current Storage Audit Implication
+
+The storage audit suggests a large part of the used space is games and reinstallable data. The first backup pass should focus on the user profile and personal archives, not a full disk copy.
+
+Before deleting or wiping anything:
+
+- Review the user profile folders.
+- Check personal archives.
+- Confirm whether local game saves are cloud-synced or need backup.
+- Verify the uploaded backup from the new laptop.
+- Explicitly mark `SAFE TO WIPE`.
