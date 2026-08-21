@@ -9,7 +9,7 @@ This file should only contain sanitized facts. Do not include personal filenames
 ## Current State
 
 ```text
-Backup execution: NOT STARTED
+Backup execution: LOCAL COPY COMPLETE
 Google Drive upload: NOT VERIFIED
 New laptop verification: NOT VERIFIED
 Wipe status: NOT SAFE TO WIPE
@@ -25,21 +25,21 @@ Google Drive folder: nitro-homelab-acer-backup-2026-08
 
 ### Prepare
 
-- [ ] Acer connected to power.
-- [ ] Network connection stable.
-- [ ] Google Drive available.
-- [ ] Backup folder created.
-- [ ] No wipe, format or Proxmox install started.
+- [x] Acer connected to power.
+- [x] Network connection stable.
+- [x] Google Drive available.
+- [x] Backup folder created.
+- [x] No wipe, format or Proxmox install started.
 
 ### Copy BACKUP Items
 
-- [ ] Documents copied.
-- [ ] Photos copied.
-- [ ] Videos copied, if applicable.
-- [ ] Projects/source code copied.
-- [ ] School/work files copied.
-- [ ] Selected Desktop files copied.
-- [ ] Selected Downloads files copied.
+- [x] Documents copied.
+- [x] Photos copied.
+- [x] Videos copied, if applicable.
+- [x] Projects/source code copied.
+- [x] School/work files copied.
+- [x] Selected Desktop files copied.
+- [x] Selected Downloads files copied.
 - [ ] Local-only game saves copied, if needed.
 - [ ] Important app-specific configuration copied, if needed.
 
@@ -77,15 +77,17 @@ Google Drive folder: nitro-homelab-acer-backup-2026-08
 
 ## Sanitized Results
 
-Fill this after execution:
+Current sanitized result:
 
 ```text
-Backup started:
-Backup completed:
-Verified from new laptop:
-Verified categories:
-Known exclusions:
-Remaining concerns:
+Initial backup copy: 14,583 items, 16.39 GB
+Filtered Downloads copy: 4,485 items, 100.71 GB
+Approximate local backup total: 117.10 GB
+Google Drive upload: pending
+Verified from new laptop: no
+Verified categories: pending
+Known exclusions: full game libraries, reinstallable applications, Windows system folders, Program Files, caches, temporary files, audio/video/app installers from Downloads filter
+Remaining concerns: upload to Google Drive and verification from the new laptop still required
 Final status: NOT SAFE TO WIPE
 ```
 
