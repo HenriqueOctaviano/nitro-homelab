@@ -26,7 +26,7 @@ Acer Nitro 5
     └── D: Kingston NVMe, existing data
 ```
 
-The current priority is backup, verification and review before any wipe or Proxmox installation.
+Backup and new-laptop verification are complete. The current priority is firmware preparation before Proxmox installation.
 
 ## Intended Direction
 
@@ -87,7 +87,7 @@ This is not a final decision.
 ## Constraints And Unknowns
 
 - RAM is 16 GB, not the initially assumed 32 GB, so VM concurrency must be planned carefully.
-- Firmware virtualization is currently disabled and must be enabled before a serious virtualization build.
+- Firmware virtualization is currently detected as disabled and must be enabled before a serious virtualization build.
 - GPU passthrough is not guaranteed on this notebook and needs research because of Optimus, IOMMU groups and laptop PCIe topology.
 - Secure Boot behavior must be reviewed before installing Proxmox.
 - OPNsense, network segmentation and attack lab isolation must be designed before implementation.

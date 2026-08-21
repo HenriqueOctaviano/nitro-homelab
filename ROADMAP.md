@@ -27,11 +27,27 @@ Dependencies:
 
 Goal: inspect and configure firmware settings required for virtualization.
 
+Progress:
+
+```text
+[~] 01.1 BIOS entry plan
+[ ] 01.2 Enable Intel VT-x
+[ ] 01.3 Review Secure Boot
+[ ] 01.4 Confirm virtualization from Windows
+[ ] 01.5 Document final firmware state
+```
+
 Potential work:
 
 - Enable Intel VT-x if disabled.
 - Review Secure Boot implications.
 - Document BIOS version and settings.
+
+Dependencies:
+
+- Backup is complete and the Acer is marked `SAFE TO WIPE`.
+- Do not install Proxmox until firmware settings are documented.
+- Any destructive installation step still requires final confirmation.
 
 ## Phase 02 - Proxmox
 
