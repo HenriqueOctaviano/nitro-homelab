@@ -119,6 +119,8 @@ Do not document:
 - License keys
 - Raw file lists
 
+Use `backup-execution-log.md` for the actual execution record.
+
 ## SAFE TO WIPE Gate
 
 The Acer can only be marked `SAFE TO WIPE` after:
