@@ -15,8 +15,9 @@ This phase prepares the Acer Nitro 5 before any destructive change.
 
 ```text
 [x] Hardware baseline
-[~] Storage audit
-[ ] Backup plan
+[x] Storage audit
+[~] Backup classification
+[ ] Backup plan finalization
 [ ] Upload to Google Drive
 [ ] Backup verification
 [ ] Review from new laptop
@@ -26,3 +27,9 @@ This phase prepares the Acer Nitro 5 before any destructive change.
 ## Rule
 
 Do not install Proxmox or wipe disks until backup, verification and review are complete.
+
+## Current Documents
+
+- `backup-plan.md`: backup rules, target and workflow.
+- `backup-classification.md`: current `BACKUP / REVIEW / DISCARD` classification.
+- `storage-audit.md`: sanitized storage audit summary.

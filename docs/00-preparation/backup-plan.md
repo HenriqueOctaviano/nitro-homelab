@@ -18,9 +18,10 @@ Google Drive, approximately 5 TB available.
 
 ## Initial Checklist
 
-- [~] Identify important local folders.
+- [x] Identify important local folders.
 - [x] Confirm cloud or external backup location.
-- [ ] Confirm available free storage.
+- [x] Confirm available free storage.
+- [~] Classify data as backup, review or discard.
 - [ ] Test opening a backed-up file.
 - [ ] Document only non-sensitive backup decisions here.
 
@@ -52,3 +53,13 @@ Before deleting or wiping anything:
 - Confirm whether local game saves are cloud-synced or need backup.
 - Verify the uploaded backup from the new laptop.
 - Explicitly mark `SAFE TO WIPE`.
+
+## Operational Order
+
+1. Create a backup folder in Google Drive for the Acer.
+2. Copy only `BACKUP` items first.
+3. Review `REVIEW` items manually.
+4. Copy selected `REVIEW` items.
+5. Verify the backup from the new laptop.
+6. Document what was verified.
+7. Mark `SAFE TO WIPE` only after verification.
