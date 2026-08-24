@@ -93,12 +93,29 @@ The final disk selected in the installer must be confirmed visually before conti
 - [x] Verify ISO checksum.
 - [x] Create bootable USB installer.
 - [x] Boot Acer from USB.
-- [ ] Confirm installer sees both NVMe SSDs.
-- [ ] Confirm target disk before any install action.
+- [x] Confirm installer sees both NVMe SSDs.
+- [x] Confirm target disk before any install action.
 - [x] Confirm final destructive action with user.
-- [~] Install Proxmox VE.
-- [ ] Boot into Proxmox.
-- [ ] Access Proxmox web UI from new laptop.
+- [x] Install Proxmox VE.
+- [x] Boot into Proxmox.
+- [x] Access Proxmox web UI from new laptop.
+
+## Installed State
+
+```text
+Hostname: pve01
+Target disk: /dev/nvme1n1, WDC PC SN520 ~477 GB
+Filesystem: ext4
+Management interface: nic0 / r8169
+Management IP: 10.0.2.50/24
+Gateway: 10.0.2.1
+Web UI: https://10.0.2.50:8006
+Web UI access: confirmed
+```
+
+Installation note:
+
+The installer was initially configured with `192.168.100.50/24`, then Proxmox networking was corrected to `10.0.2.50/24` after first boot to match the active VLAN.
 
 ## Destructive Boundary
 

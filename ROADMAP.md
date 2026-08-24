@@ -56,13 +56,13 @@ Goal: evaluate and install Proxmox VE bare metal after preparation is complete.
 Progress:
 
 ```text
-[~] 02.1 Installation plan
-[ ] 02.2 ISO download and verification
-[ ] 02.3 USB installer creation
-[ ] 02.4 Disk layout confirmation
-[ ] 02.5 Final destructive-action confirmation
-[ ] 02.6 Install Proxmox VE
-[ ] 02.7 First boot and web UI access
+[x] 02.1 Installation plan
+[x] 02.2 ISO download and verification
+[x] 02.3 USB installer creation
+[x] 02.4 Disk layout confirmation
+[x] 02.5 Final destructive-action confirmation
+[x] 02.6 Install Proxmox VE
+[x] 02.7 First boot and web UI access
 ```
 
 Potential work:

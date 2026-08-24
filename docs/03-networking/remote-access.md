@@ -27,7 +27,7 @@ Tailscale
     ↓
 Home network / Proxmox node
     ↓
-https://192.168.100.50:8006
+https://10.0.2.50:8006
 ```
 
 ## Later Learning Path
@@ -70,4 +70,5 @@ Remote access: planned
 Tailscale: recommended initial option
 WireGuard/OPNsense: future learning path
 Public Proxmox exposure: rejected
+Current local Proxmox endpoint: https://10.0.2.50:8006
 ```
