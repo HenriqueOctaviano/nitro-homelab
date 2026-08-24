@@ -18,7 +18,7 @@ Current repo branch: main
 Next phase: Phase 02 - Proxmox
 ```
 
-No Proxmox ISO has been downloaded yet in this step.
+The Proxmox ISO has been downloaded and its SHA256 checksum was verified.
 
 No USB installer has been created yet.
 
@@ -31,6 +31,12 @@ Prepare a bootable Proxmox VE USB installer, then boot the Acer from USB.
 Do not start installation until the target disk is visually confirmed and the destructive-action confirmation is given.
 
 ## Step 1 - Download Proxmox VE ISO
+
+Status:
+
+```text
+Complete
+```
 
 Use the official Proxmox downloads page:
 
@@ -53,6 +59,12 @@ Expected SHA256:
 
 ## Step 2 - Verify ISO Checksum
 
+Status:
+
+```text
+Complete
+```
+
 After download, run PowerShell:
 
 ```powershell
@@ -68,6 +80,18 @@ The result must match:
 ```
 
 If it does not match, do not use the ISO.
+
+Observed SHA256:
+
+```text
+4E88FE416DF9B527624A175F24C9AA07C714D3332AFB1EE3DBF3879573EF2C6C
+```
+
+Result:
+
+```text
+Match
+```
 
 ## Step 3 - Create USB Installer
 
@@ -114,8 +138,8 @@ The selected installer target disk must be confirmed visually.
 When continuing, record sanitized facts only:
 
 ```text
-ISO downloaded: yes/no
-SHA256 verified: yes/no
+ISO downloaded: yes
+SHA256 verified: yes
 USB installer created: yes/no
 Booted from USB: yes/no
 Target disk confirmed: yes/no
@@ -129,8 +153,8 @@ Do not record personal filenames, private paths, account names or raw device ser
 Stop point for this session:
 
 ```text
-Ready to download Proxmox ISO.
-No ISO downloaded yet.
+Ready to create Proxmox USB installer.
+ISO downloaded and verified.
 No USB installer created yet.
 No disk wipe started.
 ```

@@ -89,8 +89,8 @@ The final disk selected in the installer must be confirmed visually before conti
 
 ## Pre-Install Checklist
 
-- [ ] Download Proxmox VE ISO from official site.
-- [ ] Verify ISO checksum.
+- [x] Download Proxmox VE ISO from official site.
+- [x] Verify ISO checksum.
 - [ ] Create bootable USB installer.
 - [ ] Boot Acer from USB.
 - [ ] Confirm installer sees both NVMe SSDs.
