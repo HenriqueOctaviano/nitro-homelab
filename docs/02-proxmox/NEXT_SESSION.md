@@ -20,7 +20,7 @@ Next phase: Phase 02 - Proxmox
 
 The Proxmox ISO has been downloaded and its SHA256 checksum was verified.
 
-No USB installer has been created yet.
+The Proxmox USB installer has been created.
 
 No disk wipe has been started.
 
@@ -95,6 +95,12 @@ Match
 
 ## Step 3 - Create USB Installer
 
+Status:
+
+```text
+Complete
+```
+
 Use Rufus or balenaEtcher.
 
 Important:
@@ -102,6 +108,13 @@ Important:
 - The USB drive will be erased.
 - Confirm the selected USB drive before writing.
 - Do not select any internal Acer SSD.
+
+Observed result:
+
+```text
+Tool: Rufus
+USB installer created: yes
+```
 
 ## Step 4 - Boot Acer From USB
 
@@ -140,7 +153,7 @@ When continuing, record sanitized facts only:
 ```text
 ISO downloaded: yes
 SHA256 verified: yes
-USB installer created: yes/no
+USB installer created: yes
 Booted from USB: yes/no
 Target disk confirmed: yes/no
 Install started: yes/no
@@ -155,6 +168,6 @@ Stop point for this session:
 ```text
 Ready to create Proxmox USB installer.
 ISO downloaded and verified.
-No USB installer created yet.
+USB installer created.
 No disk wipe started.
 ```
