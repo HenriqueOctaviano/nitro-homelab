@@ -92,11 +92,11 @@ The final disk selected in the installer must be confirmed visually before conti
 - [x] Download Proxmox VE ISO from official site.
 - [x] Verify ISO checksum.
 - [x] Create bootable USB installer.
-- [ ] Boot Acer from USB.
+- [x] Boot Acer from USB.
 - [ ] Confirm installer sees both NVMe SSDs.
 - [ ] Confirm target disk before any install action.
-- [ ] Confirm final destructive action with user.
-- [ ] Install Proxmox VE.
+- [x] Confirm final destructive action with user.
+- [~] Install Proxmox VE.
 - [ ] Boot into Proxmox.
 - [ ] Access Proxmox web UI from new laptop.
 
@@ -113,3 +113,7 @@ No destructive installation step should happen before that explicit confirmation
 ## Continuation Note
 
 For the next working session, use `NEXT_SESSION.md`.
+
+## Remote Access Note
+
+Remote access planning starts in `docs/03-networking/remote-access.md`. Do not expose Proxmox directly to the public internet.
