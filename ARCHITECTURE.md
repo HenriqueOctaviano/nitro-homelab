@@ -11,22 +11,28 @@
 | Storage 2 | Kingston NV2, approximately 932 GB |
 | Ethernet | Realtek Gaming GbE, 1 Gbps |
 | Wi-Fi | Intel Wi-Fi 6 AX200 |
-| Current OS | Windows 11 Pro |
+| Current OS | Proxmox VE |
 | Secure Boot | Enabled |
 | Firmware virtualization | Intel VT-x/VT-d enabled in BIOS; Task Manager shows virtualization enabled |
 
 ## Current State
 
-The Acer is still running Windows 11 Pro. No destructive changes have been made.
+The Acer is running Proxmox VE bare metal.
 
 ```text
 Acer Nitro 5
-└── Windows 11 Pro
-    ├── C: WDC NVMe, current Windows installation
-    └── D: Kingston NVMe, existing data
+└── Proxmox VE
+    ├── WDC PC SN520 ~477 GB: Proxmox system disk
+    └── Kingston NV2 ~932 GB: planned lab storage
 ```
 
-Backup and new-laptop verification are complete. Firmware virtualization is enabled. The current priority is Proxmox installation planning before any destructive disk operation.
+Backup and new-laptop verification are complete. Proxmox has been installed and the web UI is reachable on the current management VLAN.
+
+Current management endpoint:
+
+```text
+https://10.0.2.50:8006
+```
 
 ## Intended Direction
 
@@ -65,31 +71,24 @@ Potential core VM set:
 
 The machine has two NVMe SSDs, which allows separating the Proxmox system disk from most lab storage.
 
-Initial intended layout:
+Current layout:
 
 ```text
 WDC 512 GB
 ├── Proxmox VE system
-├── ISOs
-├── templates
-└── small/critical VMs
+└── initial local storage
 
 Kingston 1 TB
-├── VMs
-├── containers
-├── databases
-├── AI models
-└── lab storage
+└── planned lab storage
 ```
 
-This layout must be confirmed in the Proxmox installer before any disk write.
+Detailed storage pools still need to be configured.
 
 ## Constraints And Unknowns
 
 - RAM is 16 GB, not the initially assumed 32 GB, so VM concurrency must be planned carefully.
-- Firmware virtualization is currently detected as disabled and must be enabled before a serious virtualization build.
+- CIM/WMI virtualization reporting from Windows was inconsistent before wipe, but BIOS and Task Manager showed virtualization enabled.
 - GPU passthrough is not guaranteed on this notebook and needs research because of Optimus, IOMMU groups and laptop PCIe topology.
-- Secure Boot behavior must be reviewed before installing Proxmox.
 - OPNsense, network segmentation and attack lab isolation must be designed before implementation.
 
 ## Safety Principle
